@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="shortcut icon" type="image" href="imagesfoods/preview-removebg-preview.png">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="stylefoods.css">
+</head>
+<body>
+<section class="header">
+    <a href="#" class="logo"><i class="fas fa-utensils"></i> FOODIE </a>
+    <nav class="navbar">
+        <a href="foods.html">Home</a>
+        <a href="FOOD_2.html">About</a>
+        <a href="FOOD_3.html">Food</a>
+        <a href="FOOD_4.html">Gallery</a>
+        <a href="FOOD_5.html">Menu</a>
+        <a href="BOLGS.html">Blogs</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</section>
+
+<section class="order" id="order">
+    <div class="heading">
+        <span>Order Now</span>
+        <h3>Fast Home Delivery</h3>
+    </div>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="45abea53-e48d-4e2f-98ab-693a9fbb2b43">
+        <input type="hidden" name="subject" value="New Order Received">
+        <input type="hidden" name="redirect" value="https://your-website.com/thank-you.html">
+        <div class="box-container">
+            <div class="box">
+                <div class="inputBox">
+                    <span>Full Name</span>
+                    <input type="text" name="full_name" placeholder="Enter your name" required>
+                </div>
+                <div class="inputBox">
+                    <span>Food Name</span>
+                    <input type="text" name="food_name" placeholder="Food you want" required>
+                </div>
+                <div class="inputBox">
+                    <span>Order Details</span>
+                    <input type="text" name="order_details" placeholder="Specifics with food" required>
+                </div>
+                <div class="inputBox">
+                    <span>Your Address</span>
+                    <textarea name="your_address" placeholder="Enter your address" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inputBox">
+                    <span>Number</span>
+                    <input type="number" name="number" placeholder="Enter your number" required>
+                </div>
+                <div class="inputBox">
+                    <span>How Much</span>
+                    <input type="number" name="quantity" placeholder="How many you want" required>
+                </div>
+                <div class="inputBox">
+                    <span>When You Want</span>
+                    <input type="datetime-local" name="delivery_time" required>
+                </div>
+                <div class="inputBox">
+                    <span>Our Address</span>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115133.01634131288!2d85.06064120856574!3d25.608014355214316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1705042089479!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Order Now" class="btn">
+    </form>
+    <div id="confirmationMessage" style="display: none;">
+        <p>Your order is successfully stored. It will be placed in 20 minutes. Thank you for your order! Have a nice day.</p>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="credit">Created by <span>AMAN RANJAN</span></div>
+</section>
+
+<!-- Add JavaScript for Form Handling -->
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting normally
+        document.getElementById('confirmationMessage').style.display = 'block';
+        setTimeout(function() {
+            event.target.submit(); // Submit the form after showing the message
+        }, 2000); // Adjust the delay as needed
+    });
+</script>
+</body>
+</html>
