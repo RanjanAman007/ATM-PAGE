@@ -1,0 +1,201 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Restaurant App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-white shadow">
+   <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-gray-800">
+     Restaurant App
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#order">
+        Order
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#menu">
+        Menu
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#profile">
+        Profile
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800" href="#about">
+        About
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto px-4 py-6">
+   <!-- Home Page -->
+   <section class="mb-12" id="home">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Welcome to Our Restaurant
+    </h2>
+    <p class="text-gray-600 mb-6">
+     Experience the best dining experience with us. Enjoy our delicious meals and excellent service.
+    </p>
+    <img alt="A beautifully set dining table with various dishes and drinks in a cozy restaurant setting" class="w-full rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/4rrOea25RYWVMaIkL1aftK5qPk9H7LDyUIwqMYsEkZtFD5sTA.jpg" width="800"/>
+   </section>
+   <!-- Order Page -->
+   <section class="mb-12" id="order">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Order Your Favorite Meals
+    </h2>
+    <p class="text-gray-600 mb-6">
+     Choose from our wide range of dishes and place your order online.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="A delicious plate of spaghetti with tomato sauce and basil" class="w-full rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/KTDzquZJK3J1Ox6RJvSpoqfUBdXvVGIM2JdfMYz1lE4GD5sTA.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">
+       Spaghetti
+      </h3>
+      <p class="text-gray-600 mb-4">
+       A classic Italian pasta dish with rich tomato sauce and fresh basil.
+      </p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+       Order Now
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="A juicy grilled steak with a side of vegetables" class="w-full rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/jld9zXVjMg7xOdBh14LVt6ifSwuuiffMnBd3SwxWf71TMkzOB.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">
+       Grilled Steak
+      </h3>
+      <p class="text-gray-600 mb-4">
+       A perfectly grilled steak served with a side of fresh vegetables.
+      </p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+       Order Now
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="A fresh garden salad with various vegetables and a light dressing" class="w-full rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/x5RjV6L1GIZqAl2aOzl1xHXmsGVr6q96GVBaHn5lFPtvQO7E.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">
+       Garden Salad
+      </h3>
+      <p class="text-gray-600 mb-4">
+       A fresh and healthy salad with a variety of vegetables and a light dressing.
+      </p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+       Order Now
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Menu Page -->
+   <section class="mb-12" id="menu">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Our Menu
+    </h2>
+    <p class="text-gray-600 mb-6">
+     Explore our diverse menu featuring a variety of dishes to satisfy your taste buds.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="A delicious plate of sushi rolls with soy sauce and wasabi" class="w-full rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/mCEGCBeCaiU6OqtubA6qeZu1N2Sa0dysxCGDf3TNZ02fLkzOB.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">
+       Sushi Rolls
+      </h3>
+      <p class="text-gray-600 mb-4">
+       A variety of fresh sushi rolls served with soy sauce and wasabi.
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="A bowl of creamy tomato soup with a side of bread" class="w-full rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/OfKf29kyVQvJfJv2TEkyjtIx7ShXlIhZviyWM6wLFYQ5FyZnA.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">
+       Tomato Soup
+      </h3>
+      <p class="text-gray-600 mb-4">
+       A warm and creamy tomato soup served with a side of bread.
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-lg">
+      <img alt="A plate of crispy fried chicken with a side of fries" class="w-full rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/CYDlp6BTEYJkPJ9bgtedlUYe3ZHfOpBtnX5BN8ClquLEGyZnA.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800 mb-2">
+       Fried Chicken
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Crispy and juicy fried chicken served with a side of fries.
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- Profile Page -->
+   <section class="mb-12" id="profile">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     Your Profile
+    </h2>
+    <p class="text-gray-600 mb-6">
+     Manage your account details and view your order history.
+    </p>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <h3 class="text-xl font-bold text-gray-800 mb-4">
+      Account Details
+     </h3>
+     <p class="text-gray-600 mb-4">
+      Name: Aman Ranjan
+     </p>
+     <p class="text-gray-600 mb-4">
+      Email: badbadshah2006@gmail.com
+     </p>
+     <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+      Edit Profile
+     </button>
+    </div>
+   </section>
+   <!-- About Page -->
+   <section class="mb-12" id="about">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+     About Us
+    </h2>
+    <p class="text-gray-600 mb-6">
+     Learn more about our restaurant and our commitment to providing the best dining experience.
+    </p>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <h3 class="text-xl font-bold text-gray-800 mb-4">
+      Our Story
+     </h3>
+     <p class="text-gray-600 mb-4">
+      Our restaurant was founded with the mission to provide delicious meals and excellent service. We use only the freshest ingredients and our chefs are dedicated to creating culinary masterpieces.
+     </p>
+     <img alt="A group of chefs in a kitchen preparing various dishes with fresh ingredients" class="w-full rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/S4SxasEA7S6VAtHeNLUnUAaj957Fqta49HNm01hzH6dghc2JA.jpg" width="800"/>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white shadow mt-12">
+   <div class="container mx-auto px-4 py-6 text-center">
+    <p class="text-gray-600">
+     © 2023 Restaurant App. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
